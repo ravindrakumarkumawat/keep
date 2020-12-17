@@ -42,7 +42,7 @@ form div {
   border-radius: .4rem;
 }
 
-button {
+.Signup {
   font-size: 1.2rem;
   padding: 1rem;   
   border-radius: .4rem;
@@ -54,7 +54,7 @@ button {
   color: #fff;
 }
 
-button:hover {  
+.Signup:hover {  
   background-color: #368826;
   color: #fff;
 }
