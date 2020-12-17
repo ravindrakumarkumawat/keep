@@ -1,0 +1,60 @@
+.Login-container {
+  width: 25rem;
+  background-color: #fff;
+  margin: 10rem auto;
+  border-radius: .4rem;
+  box-shadow: 0px 0px 5px rgba(38, 142, 228, 0.5);
+}
+
+form {
+  padding: .7rem;
+}
+
+form input {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #dddfe2;  
+  border-radius: .4rem;
+  width: 100%;
+  cursor: pointer;  
+}
+
+form input:focus {
+  border: 1px solid #50a4e9;
+  box-shadow: inset 0px 0px 5px rgba(38, 142, 228, 0.5);
+  outline: none;
+}
+
+form input[type="submit"] {
+  color: #fff;
+  background-color: #166fe5;
+  border-color: #166fe5;
+}
+
+form input[type="submit"]:hover {
+  color: #fff;
+  background-color: #29487d;
+  border-color: #29487d;
+}
+ 
+form div {
+  margin: .5rem;  
+  border-radius: .4rem;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 1rem;   
+  border-radius: .4rem;
+  border: none;
+  width: 70%;
+  cursor: pointer;
+  margin: 1rem 3.5rem;
+  background-color: #42b72a;
+  color: #fff;
+}
+
+button:hover {  
+  background-color: #368826;
+  color: #fff;
+}
