@@ -18,6 +18,28 @@ const userSchema = new mongoose.Schema({
     type: String, 
     required: true
   },
+  lists: [
+    {
+      listName: {
+        type: String,
+        required: true
+      },
+      tasks: [{
+        taskName: {
+          type: String,
+          required: true
+        },
+        completed: {
+          type: Boolean,
+          default: false
+        }
+      }],
+      createdOn: {
+        type: Date,
+        default: Date.now
+      }
+    }
+  ],
   createdOn: {
     type: Date,
     default: Date.now
