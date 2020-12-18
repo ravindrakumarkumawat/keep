@@ -1,8 +1,5 @@
 const express = require('express')
-const bcrypt = require('bcrypt')
-const jwt = require("jsonwebtoken")
 const router = express.Router()
-const User = require('../models/userModel')
 const auth = require("../middleware/auth")
 const { registerUser, loginUser, checkUser, 
   tokenIsValid, deleteUser } = require('../controllers/user')

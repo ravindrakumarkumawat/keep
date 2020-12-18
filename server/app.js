@@ -1,9 +1,9 @@
 const express = require('express')
 const cors = require('cors')
-const bcrypt = require('bcrypt')
 const { connectDB } = require('./db/connectDb')
 
-const uploadRouter = require('./routes/uploadRouter')
+const listsRouter = require('./routes/lists')
+const taskRouter = require('./routes/tasks')
 const userRouter = require('./routes/userRouter')
 
 const app = express()
@@ -17,8 +17,9 @@ app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 
 // Routes
-app.use('/users/:id', uploadRouter)
 app.use('/users', userRouter)
+app.use('/lists', listsRouter)
+app.use('/lists/:id/tasks', taskRouter)
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
